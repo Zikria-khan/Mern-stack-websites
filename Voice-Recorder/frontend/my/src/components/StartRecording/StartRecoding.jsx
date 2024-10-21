@@ -43,7 +43,7 @@ const StartRecording = () => {
     const formData = new FormData();
     formData.append('file', audioBlob, 'recording.wav');
     try {
-      await axios.post('http://localhost:8000/upload', formData, {
+      await axios.post('mern-stack-websites-z1zg.vercel.app/upload', formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
     } catch (error) {
