@@ -1,0 +1,91 @@
+/* AllRecordings.css */
+
+.all-recordings {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #eef2f3; /* Soft light background */
+}
+
+h1 {
+  font-size: 2.5rem; /* Heading size */
+  margin-bottom: 30px;
+  color: #333; /* Darker title color for better contrast */
+  animation: fadeIn 1s ease-in; /* Fade-in animation */
+}
+
+.recording-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap; /* Wrap items to the next line */
+  justify-content: center; /* Center align items */
+  gap: 30px; /* Increased space between items */
+}
+
+.voice-message {
+  background-color: #fff; /* Card background */
+  border-radius: 12px; /* More rounded corners */
+  padding: 20px;
+  width: calc(30% - 30px); /* Adjust width for responsive design */
+  height: 10vh; /* Fixed height for cards */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15); /* Soft shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation on hover */
+  display: flex; /* Flexbox for vertical alignment */
+  flex-direction: column; /* Stack items vertically */
+  justify-content: space-between; /* Space out content */
+}
+
+.voice-message:hover {
+  transform: translateY(-4px); /* Slight lift on hover */
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+
+.voice-message audio {
+  width: 100%; /* Make audio responsive */
+  margin-bottom: 10px; /* Spacing below audio */
+}
+
+.voice-message p {
+  margin: 5px 0; /* Spacing for the date */
+  font-size: 0.9rem; /* Slightly smaller font size for date */
+  color: #555; /* Subtle text color */
+}
+
+button {
+  background-color: #ff4757; /* Bright red for button */
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold; /* Bold text */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Animation for button */
+}
+
+button:hover {
+  background-color: #e84118; /* Darker red on hover */
+  transform: translateY(-2px); /* Lift effect on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .voice-message {
+      width: calc(45% - 30px); /* Adjust width for tablet */
+  }
+}
+
+@media (max-width: 480px) {
+  .voice-message {
+      width: 100%; /* Full width for mobile */
+  }
+}
+
+/* Keyframes for fade-in animation */
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
