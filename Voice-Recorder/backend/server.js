@@ -77,6 +77,9 @@ app.post('/upload', upload.single('file'), async (req, res) => {
     res.status(500).json({ error: 'Upload failed' });
   }
 });
+app.get('/test', (req, res) => {
+  res.json({ message: 'API is working correctly!' });
+});
 
 // Route to get all recordings
 app.get('/recordings', async (req, res) => {
