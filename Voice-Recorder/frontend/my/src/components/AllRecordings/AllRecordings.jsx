@@ -11,7 +11,7 @@ const AllRecordings = () => {
 
   const fetchRecordings = async () => {
     try {
-      const response = await axios.get('http://localhost:8000/recordings');
+      const response = await axios.get('mern-stack-websites-z1zg.vercel.app/recordings');
       setRecordings(response.data);
     } catch (error) {
       console.error('Error fetching recordings:', error);
@@ -20,7 +20,7 @@ const AllRecordings = () => {
 
   const deleteRecording = async (id) => {
     try {
-      await axios.delete(`http://localhost:8000/recordings/${id}`);
+      await axios.delete(`mern-stack-websites-z1zg.vercel.app/recordings/${id}`);
       fetchRecordings();
     } catch (error) {
       console.error('Error deleting recording:', error);
