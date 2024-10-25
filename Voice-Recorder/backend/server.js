@@ -56,6 +56,9 @@ const uploadToCloudinary = (buffer, options) => {
     streamifier.createReadStream(buffer).pipe(cloudinaryStream);
   });
 };
+app.get('/', (req, res) => {
+  res.send('Welcome to the Audio Upload Service!'); // A simple response
+});
 
 // Route to upload audio
 app.post('/upload', upload.single('file'), async (req, res) => {
