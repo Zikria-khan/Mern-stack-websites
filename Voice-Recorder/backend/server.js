@@ -11,7 +11,7 @@ const app = express();
 
 // CORS Configuration
 app.use(cors({
-  origin: ['https://apps-8gvh.vercel.app', 'http://localhost:5173'], // Allow both production and local
+  origin: ['mern-stack-websites.vercel.app', 'http://localhost:5173'], // Allow both production and local
   methods: ['GET', 'POST', 'PUT', 'DELETE'], // Specify allowed methods
 }));
 
