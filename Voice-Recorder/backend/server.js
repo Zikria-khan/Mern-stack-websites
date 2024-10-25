@@ -11,9 +11,13 @@ const app = express();
 
 // CORS Configuration
 app.use(cors({
-  origin: ['mern-stack-websites.vercel.app', 'http://localhost:5173'], // Allow both production and local
+  origin: '*', // Allow all origins
   methods: ['GET', 'POST', 'PUT', 'DELETE'], // Specify allowed methods
+  allowedHeaders: ['Content-Type', 'Authorization'], // Specify allowed headers
+  credentials: true // Set this to true if you need to allow credentials
 }));
+
+app.options('*', cors()); // Enable preflight requests
 
 app.use(express.json());
 
@@ -56,8 +60,9 @@ const uploadToCloudinary = (buffer, options) => {
     streamifier.createReadStream(buffer).pipe(cloudinaryStream);
   });
 };
+
 app.get('/', (req, res) => {
-  res.send('Welcome to the Audio Upload Service!'); // A simple response
+  res.send('Welcome to the Audio Upload Service!');
 });
 
 // Route to upload audio
