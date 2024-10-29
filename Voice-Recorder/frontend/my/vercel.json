@@ -1,10 +1,11 @@
 {
   "version": 2,
   "build": {
-    "src": "dist/**/*",
+    "src": "package.json",
     "use": "@vercel/static-build",
     "config": {
-      "distDir": "dist"
+      "distDir": "dist", 
+      "buildCommand": "npm run build"  
     }
   },
   "routes": [
