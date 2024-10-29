@@ -56,6 +56,9 @@ const Recording = mongoose.model('Recording', recordingSchema);
 app.get('/api/test', (req, res) => {
   res.status(200).json({ message: 'Server is running!' });
 });
+app.get('/', (req, res) => {
+  res.status(200).json({ message: 'Welcome to zakriya api' });
+});
 
 // Route to start recording (upload file)
 app.post('/recordings', upload.single('audio'), async (req, res) => {
