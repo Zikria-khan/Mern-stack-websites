@@ -10,7 +10,7 @@ const Recordings = () => {
   useEffect(() => {
     async function fetchRecordings() {
       try {
-        const response = await axios.get(`http://localhost:3000/recordings`);
+        const response = await axios.get(`http://mern-stack-websites.vercel.app/recordings`);
         setRecordings(response.data);
       } catch (error) {
         console.error("Error fetching recordings", error);
@@ -21,7 +21,7 @@ const Recordings = () => {
 
   const deleteRecording = async (id) => {
     try {
-      await axios.delete(`http://localhost:3000/recordings/${id}`);
+      await axios.delete(`http://mern-stack-websites.vercel.app/recordings/${id}`);
       setRecordings(recordings.filter(recording => recording._id !== id));
     } catch (error) {
       console.error("Error deleting recording", error);
