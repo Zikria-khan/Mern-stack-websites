@@ -1,0 +1,29 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #22223b;
+    color: #f2e9e4;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f2e9e4;
+  }
+  
+  .navbar {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .navbar a {
+    color: #f2e9e4;
+    text-decoration: none;
+  }
+  
+  .navbar a:hover {
+    text-decoration: underline;
+  }
+  

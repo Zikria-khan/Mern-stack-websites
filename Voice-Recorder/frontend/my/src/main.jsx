@@ -1,10 +1,11 @@
+// src/main.jsx
 import React from 'react';
-import ReactDOM from 'react-dom/client'; // Note: Use `react-dom/client` for React 18+
-import App from './App.jsx';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+import './index.css'; // Optional: import global styles
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-
-root.render(
+// Create the root element in the DOM and render the app
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <App />
   </React.StrictMode>

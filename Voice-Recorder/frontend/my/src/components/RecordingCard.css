@@ -1,0 +1,54 @@
+.recording-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Aligns items to the start */
+  background-color: #f2f2f2; /* Light gray background */
+  border-radius: 10px; /* Rounded corners */
+  padding: 15px; /* Inner padding */
+  margin-bottom: 15px; /* Space between cards */
+  max-width: 400px; /* Set a max width for larger screens */
+  width: 100%; /* Allow full width on small screens */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.recording-card p {
+  margin: 5px 0; /* Margin for paragraph elements */
+  color: #333; /* Dark gray text */
+}
+
+.recording-card .recording-time {
+  font-size: 12px; /* Smaller font size for time */
+  color: #777; /* Lighter gray for the timestamp */
+  align-self: flex-end; /* Aligns the time to the right */
+}
+
+audio {
+  width: 100%; /* Make the audio player responsive */
+  margin-top: 10px; /* Space above the audio player */
+}
+
+.delete-btn {
+  margin-top: 10px; /* Space above the button */
+  padding: 8px 12px; /* Button padding */
+  background-color: #d9534f; /* Bootstrap danger color */
+  color: #fff; /* White text */
+  border: none; /* No border */
+  border-radius: 4px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  width: 100%; /* Full width for button */
+}
+
+.delete-btn:hover {
+  background-color: #c9302c; /* Darker red on hover */
+}
+
+/* Responsive styles for mobile */
+@media (max-width: 600px) {
+  .recording-card {
+      padding: 10px; /* Reduce padding for small screens */
+  }
+
+  .delete-btn {
+      padding: 6px; /* Smaller padding for buttons */
+  }
+}

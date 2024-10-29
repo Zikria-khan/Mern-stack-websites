@@ -1,0 +1,40 @@
+.about-us {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .about-us h2 {
+    color: #4a4e69;
+    font-size: 2rem;
+  }
+  
+  .about-us p {
+    font-size: 1rem;
+    color: #222;
+    margin-bottom: 10px;
+  }
+  
+  .about-us ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .about-us li {
+    font-size: 1.1rem;
+    color: #4a4e69;
+    margin: 10px 0;
+  }
+  
+  .about-us a {
+    color: #0077cc;
+    text-decoration: none;
+  }
+  
+  .about-us a:hover {
+    text-decoration: underline;
+  }
+  

@@ -1,0 +1,28 @@
+.start-recording {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .start-recording h1 {
+    color: #4a4e69;
+    font-size: 2.5rem;
+  }
+  
+  .start-recording button {
+    padding: 10px 20px;
+    background-color: #4a4e69;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+  
+  .start-recording button:hover {
+    background-color: #22223b;
+  }
+  
+  audio {
+    margin-top: 20px;
+  }
+  

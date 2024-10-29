@@ -1,0 +1,21 @@
+.recordings {
+    padding: 20px;
+  }
+  
+  .recordings h2 {
+    color: #4a4e69;
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  .recordings-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .recording-card {
+    flex: 1 1 300px;
+  }
+  
