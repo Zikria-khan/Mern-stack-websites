@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import axios from 'axios';
+import axios from './axiosConfig'; // Import the configured axios
 import RecordingCard from './RecordingCard';
 import './Recordings.css';
 
@@ -9,7 +9,7 @@ const Recordings = () => {
   useEffect(() => {
     async function fetchRecordings() {
       try {
-        const response = await axios.get(`http://mern-stack-websites.vercel.app/recordings`);
+        const response = await axios.get('/recordings');
         setRecordings(response.data);
       } catch (error) {
         console.error("Error fetching recordings", error);
@@ -20,7 +20,7 @@ const Recordings = () => {
 
   const deleteRecording = async (id) => {
     try {
-      await axios.delete(`https://mern-stack-websites.vercel.app/recordings/${id}`);
+      await axios.delete(`/recordings/${id}`);
       setRecordings(recordings.filter(recording => recording._id !== id));
     } catch (error) {
       console.error("Error deleting recording", error);
