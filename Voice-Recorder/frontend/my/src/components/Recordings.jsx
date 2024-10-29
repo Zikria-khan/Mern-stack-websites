@@ -1,4 +1,3 @@
-// Recordings.js
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import RecordingCard from './RecordingCard';
@@ -21,7 +20,7 @@ const Recordings = () => {
 
   const deleteRecording = async (id) => {
     try {
-      await axios.delete(`http://mern-stack-websites.vercel.app/recordings/${id}`);
+      await axios.delete(`https://mern-stack-websites.vercel.app/recordings/${id}`);
       setRecordings(recordings.filter(recording => recording._id !== id));
     } catch (error) {
       console.error("Error deleting recording", error);

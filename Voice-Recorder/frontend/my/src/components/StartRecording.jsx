@@ -1,4 +1,3 @@
-// StartRecording.js
 import React, { useState, useRef } from 'react';
 import axios from 'axios';
 import './StartRecording.css';
@@ -43,7 +42,7 @@ const StartRecording = () => {
     const formData = new FormData();
     formData.append('audio', audioBlob, 'recording.wav');
     try {
-      const response = await axios.post('http://mern-stack-websites.vercel.app/recordings', formData, {
+      const response = await axios.post('https://mern-stack-websites.vercel.app/recordings', formData, {
         headers: { 'Content-Type': 'multipart/form-data' },
       });
       console.log('Audio uploaded successfully:', response.data);

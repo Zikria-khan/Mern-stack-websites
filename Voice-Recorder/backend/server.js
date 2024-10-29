@@ -4,14 +4,12 @@ const mongoose = require('mongoose');
 const cloudinary = require('cloudinary').v2;
 const { CloudinaryStorage } = require('multer-storage-cloudinary');
 const multer = require('multer');
-const cors = require('cors'); // Import CORS
+const cors = require('cors');
 
 const app = express();
 
-
 // Configure CORS
-const allowedOrigins = ['http://localhost:5173']; // Add your frontend URL here
-
+const allowedOrigins = ['http://localhost:5173', 'https://mern-stack-websites.vercel.app']; // Add your frontend URL here
 app.use(cors({
   origin: allowedOrigins,
   methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allow the necessary methods
@@ -65,6 +63,7 @@ const Recording = mongoose.model('Recording', recordingSchema);
 app.get('/api/test', (req, res) => {
   res.status(200).json({ message: 'Server is running!' });
 });
+
 app.get('/', (req, res) => {
   res.status(200).json({ message: 'Welcome to zakriya api' });
 });
