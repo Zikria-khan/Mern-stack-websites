@@ -8,8 +8,20 @@ const cors = require('cors'); // Import CORS
 
 const app = express();
 
-// Enable CORS for all origins
-app.use(cors()); 
+const express = require('express');
+const cors = require('cors');
+const app = express();
+
+// Configure CORS
+const allowedOrigins = ['http://localhost:5173']; // Add your frontend URL here
+
+app.use(cors({
+  origin: allowedOrigins,
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allow the necessary methods
+  credentials: true, // Allow credentials if needed
+}));
+
+// Other middleware and routes...
 
 // Middleware for parsing JSON bodies
 app.use(express.json()); 
