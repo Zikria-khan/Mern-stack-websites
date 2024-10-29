@@ -1,11 +1,11 @@
 {
   "version": 2,
   "build": {
-    "src": "package.json",
+    "src": "Voice-Recorder/frontend/my/package.json",
     "use": "@vercel/static-build",
     "config": {
-      "distDir": "dist", 
-      "buildCommand": "npm run build"  
+      "distDir": "dist",
+      "buildCommand": "npm run build"
     }
   },
   "routes": [
