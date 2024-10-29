@@ -9,7 +9,7 @@ const cors = require('cors');
 const app = express();
 
 // Configure CORS
-const allowedOrigins = ['http://localhost:5173', 'https://mern-stack-websites.vercel.app']; // Add your frontend URL here
+const allowedOrigins = ['https://mern-stack-websites.vercel.app']; // Add your frontend URL here
 app.use(cors({
   origin: allowedOrigins,
   methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allow the necessary methods
