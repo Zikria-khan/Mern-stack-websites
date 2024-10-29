@@ -16,7 +16,7 @@
       "MONGO_URI": "mongodb+srv://ks2941995:n63l8ssJeUgBa3ku@cluster0.ublio.mongodb.net/voice-recorders1",
       "CLOUDINARY_CLOUD_NAME": "dtuhnl2sa",
       "CLOUDINARY_API_KEY": "572246585462914",
-      "CLOUDINARY_API_SECRET": "@your-cloudinary-api-secret"
+      "CLOUDINARY_API_SECRET": "fh1LHFsJlARgTEeggfPm1oZDIxA"
     },
     "build": {
       "env": {
