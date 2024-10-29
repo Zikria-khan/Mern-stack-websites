@@ -8,9 +8,6 @@ const cors = require('cors'); // Import CORS
 
 const app = express();
 
-const express = require('express');
-const cors = require('cors');
-const app = express();
 
 // Configure CORS
 const allowedOrigins = ['http://localhost:5173']; // Add your frontend URL here
